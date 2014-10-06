@@ -1,4 +1,4 @@
-<?php namespace OpenFuego;
+<?php namespace RainbowFuego;
 /**
   * Do not run this file directly.
   * Edit config.php to set up the application.
@@ -25,7 +25,7 @@ else {
 	define(__NAMESPACE__ . '\VERBOSE', FALSE);
 }
 
-if (\OpenFuego\VERBOSE == TRUE) {
+if (\RainbowFuego\VERBOSE == TRUE) {
 	ini_set('display_errors', 1);
 	ini_set('error_reporting', E_ALL);
 }

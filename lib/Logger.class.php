@@ -1,8 +1,8 @@
-<?php namespace OpenFuego\lib;
+<?php namespace RainbowFuego\lib;
 
 class Logger {
 	
-	public static $verbose = \OpenFuego\VERBOSE;
+	public static $verbose = \RainbowFuego\VERBOSE;
 	public static $tmp;
 	
 	public static function debug($message) {
@@ -45,7 +45,7 @@ class Logger {
 		}
 
 		else {
-			$subject = "OpenFuego encountered a fatal error";
+			$subject = "RainbowFuego encountered a fatal error";
 			self::notify($subject, $messageFormatted);	
 		}
 
@@ -53,7 +53,7 @@ class Logger {
 	}
 	
 	private static function notify($subject, $message) {
-		mail(\OpenFuego\WEBMASTER, $subject, $message, 'From: ' . \OpenFuego\POSTMASTER);
+		mail(\RainbowFuego\WEBMASTER, $subject, $message, 'From: ' . \RainbowFuego\POSTMASTER);
 	}
 	
 	private static function getTimestamp() {

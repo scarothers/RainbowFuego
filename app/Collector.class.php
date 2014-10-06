@@ -1,4 +1,4 @@
-<?php namespace OpenFuego\app;
+<?php namespace RainbowFuego\app;
 
 class Collector extends \OauthPhirehose {
 	/**
@@ -26,7 +26,7 @@ class Collector extends \OauthPhirehose {
 	* @param integer $rotateInterval
 	*/
 
-	public function __construct($token, $secret, $queueDir = \OpenFuego\TMP_DIR, $rotateInterval = 10) {
+	public function __construct($token, $secret, $queueDir = \RainbowFuego\TMP_DIR, $rotateInterval = 10) {
 	
 		// Set subclass parameters
 		$this->queueDir = $queueDir;

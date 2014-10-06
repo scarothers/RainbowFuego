@@ -1,7 +1,7 @@
-<?php namespace OpenFuego\app;
+<?php namespace RainbowFuego\app;
 
-use OpenFuego\lib\DbHandle as DbHandle;
-use OpenFuego\lib\Metadata as Metadata;
+use RainbowFuego\lib\DbHandle as DbHandle;
+use RainbowFuego\lib\Metadata as Metadata;
 
 class Getter {
 

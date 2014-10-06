@@ -1,12 +1,12 @@
-<?php namespace OpenFuego;
+<?php namespace RainbowFuego;
 
 /** This script processes the data placed
   * in the queue by collect.php.
 **/
 
-use OpenFuego\lib\DbHandle as DbHandle;
-use OpenFuego\app\Consumer as Consumer;
-use OpenFuego\lib\Logger as Logger;
+use RainbowFuego\lib\DbHandle as DbHandle;
+use RainbowFuego\app\Consumer as Consumer;
+use RainbowFuego\lib\Logger as Logger;
 
 if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');

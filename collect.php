@@ -1,13 +1,13 @@
-<?php namespace OpenFuego;
+<?php namespace RainbowFuego;
 
 /** This script connects to the Twitter stream
   * and captures raw data into a queue for processing.
 **/
 
-use OpenFuego\app\Universe as Universe;
-use OpenFuego\app\Collector as Collector;
-use OpenFuego\lib\Logger as Logger;
-use OpenFuego\lib\TwitterHandle as TwitterHandle;
+use RainbowFuego\app\Universe as Universe;
+use RainbowFuego\app\Collector as Collector;
+use RainbowFuego\lib\Logger as Logger;
+use RainbowFuego\lib\TwitterHandle as TwitterHandle;
 
 if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
