@@ -17,7 +17,7 @@ if (php_sapi_name() != 'cli') {
 	die('This script must be invoked from the command line.');
 }
 
-if (!defined('OpenFuego') && function_exists('pcntl_fork')) {
+if (!defined('OPENFUEGO') && function_exists('pcntl_fork')) {
 	$error_message = "\n"
 		. 'Do not run this script directly. Run fetch.php to start.'
 		. "\n\n";

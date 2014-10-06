@@ -13,7 +13,7 @@ if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
 }
 
-define('OpenFuego', TRUE);
+define('OPENFUEGO', TRUE);
 
 require(__DIR__ . '/config.php');
 
