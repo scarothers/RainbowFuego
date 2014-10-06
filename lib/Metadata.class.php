@@ -1,4 +1,4 @@
-<?php namespace OpenFuego\lib;
+<?php namespace RainbowFuego\lib;
 
 class Metadata {
 
@@ -10,9 +10,9 @@ class Metadata {
 
 	public function __construct() {
 		$this->_apiRoot = 'http://api.embed.ly/1';
-		$this->_endpoint = defined('\OpenFuego\EMBEDLY_API_ENDPOINT') ? \OpenFuego\EMBEDLY_API_ENDPOINT : 'oembed';
-		if (defined('\OpenFuego\EMBEDLY_API_KEY')) {
-			$this->_apiKey = \OpenFuego\EMBEDLY_API_KEY;
+		$this->_endpoint = defined('\RainbowFuego\EMBEDLY_API_ENDPOINT') ? \RainbowFuego\EMBEDLY_API_ENDPOINT : 'oembed';
+		if (defined('\RainbowFuego\EMBEDLY_API_KEY')) {
+			$this->_apiKey = \RainbowFuego\EMBEDLY_API_KEY;
 		}
 	}
 	
