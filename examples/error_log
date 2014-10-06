@@ -1,0 +1,17 @@
+[22-Sep-2014 22:11:09 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/openfuego_bluehost/examples/river.php on line 107
+[22-Sep-2014 22:11:09 America/New_York] PHP Notice:  Undefined index: url in /home1/saracaro/public_html/openfuego_bluehost/examples/river.php on line 94
+[22-Sep-2014 22:11:09 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/openfuego_bluehost/examples/river.php on line 107
+[23-Sep-2014 18:31:30 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home1/saracaro/public_html/openfuego_bluehost/examples/river.php on line 90
+[05-Oct-2014 15:12:09 America/New_York] PHP Notice:  Undefined index: thumbnail_url in /home1/saracaro/public_html/openfuego_bluehost/examples/river.php on line 96
+[05-Oct-2014 16:51:36 America/New_York] PHP Fatal error:  Class 'openfuego_bluehost\app\Getter' not found in /home1/saracaro/public_html/OpenFuego/examples/getItems.php on line 16
+[05-Oct-2014 16:51:56 America/New_York] PHP Notice:  Undefined index: thumbnail_url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 96
+[05-Oct-2014 16:51:56 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 107
+[05-Oct-2014 16:51:56 America/New_York] PHP Notice:  Undefined index: thumbnail_url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 96
+[05-Oct-2014 16:51:56 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 107
+[05-Oct-2014 16:51:56 America/New_York] PHP Notice:  Undefined index: url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 94
+[05-Oct-2014 17:06:17 America/New_York] PHP Fatal error:  Class 'openfuego_bluehost\app\Getter' not found in /home1/saracaro/public_html/OpenFuego/examples/getItems.php on line 16
+[05-Oct-2014 21:09:43 America/New_York] PHP Notice:  Undefined index: thumbnail_url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 96
+[05-Oct-2014 21:09:43 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 107
+[05-Oct-2014 21:09:43 America/New_York] PHP Notice:  Undefined index: thumbnail_url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 96
+[05-Oct-2014 21:09:43 America/New_York] PHP Notice:  Undefined index: description in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 107
+[05-Oct-2014 21:09:43 America/New_York] PHP Notice:  Undefined index: url in /home1/saracaro/public_html/OpenFuego/examples/river.php on line 94

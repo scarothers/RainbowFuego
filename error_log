@@ -1,0 +1,3 @@
+[22-Sep-2014 17:10:01 America/New_York] PHP Warning:  stream_select(): unable to select [4]: Interrupted system call (max_fd=5) in /home1/saracaro/public_html/openfuego_bluehost/lib/Phirehose/Phirehose.class.php on line 424
+[05-Oct-2014 15:34:01 America/New_York] PHP Warning:  stream_select(): unable to select [4]: Interrupted system call (max_fd=5) in /home1/saracaro/public_html/openfuego_bluehost/lib/Phirehose/Phirehose.class.php on line 424
+[05-Oct-2014 22:02:01 America/New_York] PHP Warning:  stream_select(): unable to select [4]: Interrupted system call (max_fd=5) in /home1/saracaro/public_html/OpenFuego/lib/Phirehose/Phirehose.class.php on line 424
