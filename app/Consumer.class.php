@@ -165,7 +165,7 @@ class Consumer {
 			$weighted_count = Universe::getInfluence($first_user_id);
 			
 			try {
-				$sql = "INSERT INTO OpenFuego_links (
+				$sql = "INSERT INTO openfuego_links (
 					url,
 					first_seen,
 					first_tweet,
