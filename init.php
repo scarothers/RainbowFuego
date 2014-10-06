@@ -13,7 +13,7 @@ if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
 }
 
-define('OPENFUEGO', TRUE);
+define('RainbowFuego', TRUE);
 
 require(__DIR__ . '/config.php');
 
@@ -37,7 +37,7 @@ require_once(__DIR__ . '/lib/TwitterOAuth/TwitterOAuth.class.php');
 require_once(__DIR__ . '/lib/Phirehose/OAuthPhirehose.class.php');
 
 spl_autoload_register(function($className) {
-	$className = str_replace('OpenFuego' . '\\', '', $className);
+	$className = str_replace('RainbowFuego' . '\\', '', $className);
 	$className = strtr($className, '\\', DIRECTORY_SEPARATOR);	
 	$path = __DIR__ . '/' . $className . '.class.php';
 

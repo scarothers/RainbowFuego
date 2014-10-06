@@ -9,10 +9,10 @@ class TwitterHandle extends \TwitterOAuth {
 
 	public function __construct() {
 
-		$this->consumerKey = \OpenFuego\TWITTER_CONSUMER_KEY;
-		$this->consumerSecret = \OpenFuego\TWITTER_CONSUMER_SECRET;
-		$this->accessToken = \OpenFuego\TWITTER_OAUTH_TOKEN;
-		$this->accessTokenSecret = \OpenFuego\TWITTER_OAUTH_SECRET;
+		$this->consumerKey = \RainbowFuego\TWITTER_CONSUMER_KEY;
+		$this->consumerSecret = \RainbowFuego\TWITTER_CONSUMER_SECRET;
+		$this->accessToken = \RainbowFuego\TWITTER_OAUTH_TOKEN;
+		$this->accessTokenSecret = \RainbowFuego\TWITTER_OAUTH_SECRET;
 		
 		try {
 			parent::__construct(

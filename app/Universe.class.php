@@ -47,7 +47,7 @@ class Universe {
 			die($error_message);
 		}
 	
-		$owner_screen_name = \OpenFuego\TWITTER_SCREEN_NAME;
+		$owner_screen_name = \RainbowFuego\TWITTER_SCREEN_NAME;
 	
 		$twitter = new TwitterHandle();
 		

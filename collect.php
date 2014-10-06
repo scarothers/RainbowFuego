@@ -17,7 +17,7 @@ if (php_sapi_name() != 'cli') {
 	die('This script must be invoked from the command line.');
 }
 
-if (!defined('OPENFUEGO') && function_exists('pcntl_fork')) {
+if (!defined('RainbowFuego') && function_exists('pcntl_fork')) {
 	$error_message = "\n"
 		. 'Do not run this script directly. Run fetch.php to start.'
 		. "\n\n";
@@ -39,7 +39,7 @@ if ($twitter->http_code !== 200) {
 }
 unset($twitter_handle);
 
-$authorities = unserialize(\OpenFuego\AUTHORITIES);
+$authorities = unserialize(\RainbowFuego\AUTHORITIES);
 
 $universe = new Universe();
 

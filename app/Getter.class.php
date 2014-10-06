@@ -117,7 +117,7 @@ class Getter {
 		
 		$items_filtered = array_slice($items_filtered, 0, $quantity);
 	
-		if ($metadata && defined('\OpenFuego\EMBEDLY_API_KEY') && \OpenFuego\EMBEDLY_API_KEY) {
+		if ($metadata && defined('\RainbowFuego\EMBEDLY_API_KEY') && \RainbowFuego\EMBEDLY_API_KEY) {
 	
 			$metadata_params = is_array($metadata) ? $metadata : NULL;
 			

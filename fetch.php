@@ -55,8 +55,8 @@ if (!$pids[1]) {
 echo __NAMESPACE__ . ' collector running as PID ' . $pids[0] . "\n";
 echo __NAMESPACE__ . ' consumer running as PID ' . $pids[1] . "\n";
 
-@file_put_contents(\RainbowFuego\TMP_DIR . '/OpenFuego-collect.pid', $pids[0]);
-@file_put_contents(\RainbowFuego\TMP_DIR . '/OpenFuego-consume.pid', $pids[1]);
+@file_put_contents(\RainbowFuego\TMP_DIR . '/RainbowFuego-collect.pid', $pids[0]);
+@file_put_contents(\RainbowFuego\TMP_DIR . '/RainbowFuego-consume.pid', $pids[1]);
 
 exit;
 ?>

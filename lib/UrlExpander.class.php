@@ -17,19 +17,19 @@ class UrlExpander {
 	
 
 	 public function __construct() {
-		$this->_bitly_pro_domains = unserialize(\OpenFuego\BITLY_PRO_DOMAINS);
-		$this->_short_domains = unserialize(\OpenFuego\SHORT_DOMAINS);
+		$this->_bitly_pro_domains = unserialize(\RainbowFuego\BITLY_PRO_DOMAINS);
+		$this->_short_domains = unserialize(\RainbowFuego\SHORT_DOMAINS);
 
-		if (defined('\OpenFuego\BITLY_USERNAME')) {
-			 $this->_bitly_username = \OpenFuego\BITLY_USERNAME;
+		if (defined('\RainbowFuego\BITLY_USERNAME')) {
+			 $this->_bitly_username = \RainbowFuego\BITLY_USERNAME;
 		}
 		
-		if (defined('\OpenFuego\BITLY_API_KEY')) {
-			$this->_bitly_api_key = \OpenFuego\BITLY_API_KEY;
+		if (defined('\RainbowFuego\BITLY_API_KEY')) {
+			$this->_bitly_api_key = \RainbowFuego\BITLY_API_KEY;
 		}
 
-		if (defined('\OpenFuego\GOOGL_API_KEY')) {
-			$this->_googl_api_key = \OpenFuego\GOOGL_API_KEY;
+		if (defined('\RainbowFuego\GOOGL_API_KEY')) {
+			$this->_googl_api_key = \RainbowFuego\GOOGL_API_KEY;
 		}
 	}
 
