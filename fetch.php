@@ -1,6 +1,6 @@
-<?php namespace RainbowFuego;
+<?php namespace OpenFuego;
 
-use RainbowFuego\lib\Logger as Logger;
+use OpenFuego\lib\Logger as Logger;
 
 if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
@@ -55,8 +55,8 @@ if (!$pids[1]) {
 echo __NAMESPACE__ . ' collector running as PID ' . $pids[0] . "\n";
 echo __NAMESPACE__ . ' consumer running as PID ' . $pids[1] . "\n";
 
-@file_put_contents(\RainbowFuego\TMP_DIR . '/RainbowFuego-collect.pid', $pids[0]);
-@file_put_contents(\RainbowFuego\TMP_DIR . '/RainbowFuego-consume.pid', $pids[1]);
+@file_put_contents(\OpenFuego\TMP_DIR . '/OpenFuego-collect.pid', $pids[0]);
+@file_put_contents(\OpenFuego\TMP_DIR . '/OpenFuego-consume.pid', $pids[1]);
 
 exit;
 ?>

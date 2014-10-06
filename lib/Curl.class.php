@@ -1,4 +1,4 @@
-<?php namespace RainbowFuego\lib;
+<?php namespace OpenFuego\lib;
 
 class Curl {
 
@@ -21,8 +21,8 @@ class Curl {
 
 		/* Options common to all requests */
 		$this->_options = array(
-		 		CURLOPT_USERAGENT => \RainbowFuego\USER_AGENT,
-				CURLOPT_REFERER => \RainbowFuego\REFERRER,
+		 		CURLOPT_USERAGENT => \OpenFuego\USER_AGENT,
+				CURLOPT_REFERER => \OpenFuego\REFERRER,
 				CURLOPT_CONNECTTIMEOUT => 15,
 				CURLOPT_TIMEOUT => 15,
 				CURLOPT_RETURNTRANSFER => TRUE,

@@ -6,7 +6,7 @@
  */
  
 require(__DIR__ . '/../init.php');
-use RainbowFuego\app\Getter as Getter;
+use OpenFuego\app\Getter as Getter;
 
 $quantity = (isset($_REQUEST['fuegoQuantity']) ? $_REQUEST['fuegoQuantity'] : 20); 
 $hours = (isset($_REQUEST['fuegoHours']) ? $_REQUEST['fuegoHours'] : 24);

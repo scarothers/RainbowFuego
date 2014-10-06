@@ -1,9 +1,9 @@
-<?php namespace RainbowFuego\app;
+<?php namespace OpenFuego\app;
 
-use RainbowFuego\lib\UrlExpander as UrlExpander;
-use RainbowFuego\lib\DbHandle as DbHandle;
-use RainbowFuego\app\Universe as Universe;
-use RainbowFuego\lib\Logger as Logger;
+use OpenFuego\lib\UrlExpander as UrlExpander;
+use OpenFuego\lib\DbHandle as DbHandle;
+use OpenFuego\app\Universe as Universe;
+use OpenFuego\lib\Logger as Logger;
 
 class Consumer {
 	
@@ -19,7 +19,7 @@ class Consumer {
 	/**
 	 * Construct the consumer and start processing
 	 */
-	public function __construct($queueDir = \RainbowFuego\TMP_DIR, $filePattern = 'CollectorQueue*.queue', $checkInterval = 10) {
+	public function __construct($queueDir = \OpenFuego\TMP_DIR, $filePattern = 'CollectorQueue*.queue', $checkInterval = 10) {
 		$this->_queueDir = $queueDir;
 		$this->_filePattern = $filePattern;
 		$this->_checkInterval = $checkInterval;
@@ -109,7 +109,7 @@ class Consumer {
 		
 			/* Weed out statuses created by undesired user. (The streaming API also returns _retweets of_
 			** statuses by desired user, which we don't want.) */
-			if (!\RainbowFuego\app\Universe::isCitizen($status['user']['id_str'])) {	// if the tweeter is not a citizen
+			if (!\OpenFuego\app\Universe::isCitizen($status['user']['id_str'])) {	// if the tweeter is not a citizen
 				continue; // skip it
 			}			
 
@@ -165,7 +165,7 @@ class Consumer {
 			$weighted_count = Universe::getInfluence($first_user_id);
 			
 			try {
-				$sql = "INSERT INTO RainbowFuego_links (
+				$sql = "INSERT INTO OpenFuego_links (
 					url,
 					first_seen,
 					first_tweet,
@@ -227,7 +227,7 @@ class Consumer {
 	
 
 	public function cleanUp() {	
-		$expiration_days = \RainbowFuego\EXPIRATION_DAYS;
+		$expiration_days = \OpenFuego\EXPIRATION_DAYS;
 		$now = time();
 		$date = date('Y-m-d H:i:s', $now);
 		

@@ -1,13 +1,13 @@
-<?php namespace RainbowFuego;
+<?php namespace OpenFuego;
 
 /** This script connects to the Twitter stream
   * and captures raw data into a queue for processing.
 **/
 
-use RainbowFuego\app\Universe as Universe;
-use RainbowFuego\app\Collector as Collector;
-use RainbowFuego\lib\Logger as Logger;
-use RainbowFuego\lib\TwitterHandle as TwitterHandle;
+use OpenFuego\app\Universe as Universe;
+use OpenFuego\app\Collector as Collector;
+use OpenFuego\lib\Logger as Logger;
+use OpenFuego\lib\TwitterHandle as TwitterHandle;
 
 if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
@@ -17,7 +17,7 @@ if (php_sapi_name() != 'cli') {
 	die('This script must be invoked from the command line.');
 }
 
-if (!defined('RainbowFuego') && function_exists('pcntl_fork')) {
+if (!defined('OpenFuego') && function_exists('pcntl_fork')) {
 	$error_message = "\n"
 		. 'Do not run this script directly. Run fetch.php to start.'
 		. "\n\n";
@@ -39,7 +39,7 @@ if ($twitter->http_code !== 200) {
 }
 unset($twitter_handle);
 
-$authorities = unserialize(\RainbowFuego\AUTHORITIES);
+$authorities = unserialize(\OpenFuego\AUTHORITIES);
 
 $universe = new Universe();
 

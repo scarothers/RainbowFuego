@@ -1,4 +1,4 @@
-<?php namespace RainbowFuego;
+<?php namespace OpenFuego;
 /**
   * Do not run this file directly.
   * Edit config.php to set up the application.
@@ -13,7 +13,7 @@ if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300) {
 	die(__NAMESPACE__ . ' requires PHP 5.3.0 or higher.');
 }
 
-define('RainbowFuego', TRUE);
+define('OpenFuego', TRUE);
 
 require(__DIR__ . '/config.php');
 
@@ -25,7 +25,7 @@ else {
 	define(__NAMESPACE__ . '\VERBOSE', FALSE);
 }
 
-if (\RainbowFuego\VERBOSE == TRUE) {
+if (\OpenFuego\VERBOSE == TRUE) {
 	ini_set('display_errors', 1);
 	ini_set('error_reporting', E_ALL);
 }
@@ -37,7 +37,7 @@ require_once(__DIR__ . '/lib/TwitterOAuth/TwitterOAuth.class.php');
 require_once(__DIR__ . '/lib/Phirehose/OAuthPhirehose.class.php');
 
 spl_autoload_register(function($className) {
-	$className = str_replace('RainbowFuego' . '\\', '', $className);
+	$className = str_replace('OpenFuego' . '\\', '', $className);
 	$className = strtr($className, '\\', DIRECTORY_SEPARATOR);	
 	$path = __DIR__ . '/' . $className . '.class.php';
 

@@ -1,7 +1,7 @@
-<?php namespace RainbowFuego\app;
+<?php namespace OpenFuego\app;
 
-use RainbowFuego\lib\DbHandle as DbHandle;
-use RainbowFuego\lib\Metadata as Metadata;
+use OpenFuego\lib\DbHandle as DbHandle;
+use OpenFuego\lib\Metadata as Metadata;
 
 class Getter {
 
@@ -117,7 +117,7 @@ class Getter {
 		
 		$items_filtered = array_slice($items_filtered, 0, $quantity);
 	
-		if ($metadata && defined('\RainbowFuego\EMBEDLY_API_KEY') && \RainbowFuego\EMBEDLY_API_KEY) {
+		if ($metadata && defined('\OpenFuego\EMBEDLY_API_KEY') && \OpenFuego\EMBEDLY_API_KEY) {
 	
 			$metadata_params = is_array($metadata) ? $metadata : NULL;
 			
