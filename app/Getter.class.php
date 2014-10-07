@@ -32,6 +32,11 @@ class Getter {
 			$limit = $quantity;
 		}
 	
+	// Below is what queries the database, looking for links first seen in the past [TIME YOU SPECIFY]
+	// It orders them by influence descending. So something influential in the past hour may not make 
+    // it to the top 20 of the past week. 
+
+	// (I am still not sure how weighted_count or min_weighted_count are calculated). 
 		try {
 			$dbh = $this->getDbh();
 			$sql = "
