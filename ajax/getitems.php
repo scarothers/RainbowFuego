@@ -10,7 +10,7 @@ use OpenFuego\app\Getter as Getter;
 
 $quantity = (isset($_REQUEST['fuegoQuantity']) ? $_REQUEST['fuegoQuantity'] : 20); 
 $hours = (isset($_REQUEST['fuegoHours']) ? $_REQUEST['fuegoHours'] : 24);
-$scoring = (isset($_REQUEST['fuegoScoring']) ? $_REQUEST['fuegoScoring'] : FALSE);
+$scoring = (isset($_REQUEST['fuegoScoring']) ? $_REQUEST['fuegoScoring'] : TRUE);
 $metadata = (isset($_REQUEST['fuegoMetadata']) ? $_REQUEST['fuegoMetadata'] : TRUE);
 
 $fuego = new Getter();
