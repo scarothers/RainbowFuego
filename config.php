@@ -49,10 +49,10 @@ const EXPIRATION_DAYS = 1;
 /** Your database credentials.
   * Only MySQL is supported, hipsters. */
 const
-	DB_NAME = 'saracaro_rainbowfuego', 
-	DB_USER = 'saracaro_rainbow',
-	DB_PASS = 'rainbowuser',
-	DB_HOST = 'saracarothers.com',  // default: localhost
+	DB_NAME = 'rainbow_fuego', 
+	DB_USER = 'root',
+	DB_PASS = 'panda56',
+	DB_HOST = 'localhost',  // default: localhost
 	DB_PORT = 3306;  // default: 3306
 
 /** Your Twitter credentials. If you don't have any yet, visit https://dev.twitter.com and sign in.
