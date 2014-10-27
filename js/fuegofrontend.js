@@ -25,13 +25,13 @@ $(function() {
 	//navbar button actions
 	$('.selectHours').click(function(event) {
 		event.preventDefault();
-		loadData(10, $(this).attr('data-hours'), true, true, false);
+		loadData(20, $(this).attr('data-hours'), true, true, false);
 		$("#fuegocontent").html('<div class="col-lg-6 col-offset-3"><img src="img/loading.gif" /></div>;');
 		$('.selectHours').removeClass("activeSelected");
 		$(this).addClass("activeSelected");
 	});
 
-	loadData(10, 24, true, true, true);
+	loadData(20, 24, true, true, true);
 
 	//Loading new data function, the last parameter is to let masonary know
 	//To create an all new object or just reload
