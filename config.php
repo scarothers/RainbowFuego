@@ -37,6 +37,7 @@ define(__NAMESPACE__ . '\AUTHORITIES', serialize(
 		'AllisonGolds',
 		'katarcement',
 		'AmateurLeader',
+		'emilyingram',
 	)
 ));
 
