@@ -26,18 +26,10 @@ date_default_timezone_set('America/New_York');
  **/
 define(__NAMESPACE__ . '\AUTHORITIES', serialize(
 	array(
-		'sLcarothers',
-		'coryhaik',
-		'tjortenzi',
-		'terri_rupar',
-		'KerryLauerman',
-		'CaraReports',
-		'juliabeizer',
-		'ajrod',
-		'AllisonGolds',
-		'katarcement',
-		'AmateurLeader',
-		'emilyingram',
+		'twitter',
+		'usernames',
+		'go',
+		'here',
 	)
 ));
 
@@ -52,7 +44,7 @@ const EXPIRATION_DAYS = 1;
 const
 	DB_NAME = 'rainbow_fuego', 
 	DB_USER = 'root',
-	DB_PASS = 'panda56',
+	DB_PASS = 'PASSWORD',
 	DB_HOST = 'localhost',  // default: localhost
 	DB_PORT = 3306;  // default: 3306
 
@@ -62,17 +54,17 @@ const
 **/
 const
 	TWITTER_SCREEN_NAME = 'sLcarothers',
-	TWITTER_CONSUMER_KEY = 'o7wkVxiNJDfKszkC9b4hA',
-	TWITTER_CONSUMER_SECRET = '6J1pU89Ipss8wmgf2uvlZkjUYcuGu1j84ox2c70TA',
-	TWITTER_OAUTH_TOKEN = '15510953-YRWkQUKqZLiu16L1gzPy4gheJEIcylKr8tzcPWeQ5',
-	TWITTER_OAUTH_SECRET = 'JefwXHp3EEOaIDoRuXI2WS7j2ccRNSKETamZkkJEmcq93';
+	TWITTER_CONSUMER_KEY = 'CONSUMERKEY',
+	TWITTER_CONSUMER_SECRET = 'SECRET',
+	TWITTER_OAUTH_TOKEN = 'OAUTHTOKEN',
+	TWITTER_OAUTH_SECRET = 'OAUTHSECRET';
 
 /** Your Bitly credentials. Visit this page to grab them: http://bitly.com/a/your_api_key 
   * Optional, recommended. Leave blank to disable.
 **/
 const
 	BITLY_USERNAME = 'scarothers',
-	BITLY_API_KEY = 'R_50788a9b16f086418a4bf84f7139ca3b';
+	BITLY_API_KEY = 'APIKEY';
 
 /** Your Goo.gl API credentials. Visit this page for instructions:
   * https://developers.google.com/url-shortener/v1/getting_started#APIKey 
@@ -83,7 +75,7 @@ const GOOGL_API_KEY = '';
 /** Your Embed.ly API credentials. Visit this page for a free account: http://embed.ly/embed/pricing 
   * Optional, but required to return metadata with URLs. Leave blank to disable.
 **/
-const EMBEDLY_API_KEY = '65f3ed59172546cfacdcb4601eaa8e88';
+const EMBEDLY_API_KEY = 'EMBEDLY_API_KEY';
 
 /**
   * All done, no more editing! Now run fetch.php at the command line.
