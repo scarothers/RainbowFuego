@@ -4,7 +4,6 @@
   * This is the primary configuration file for OpenFuego.
   * You must edit the values below before getting started.
   * You should not need to edit any other files.
-  *
   * OpenFuego requires PHP >= 5.3.0 and MySQL 5.
   * Only POSIX operating systems (not Windows) are supported.
   * This program must be run from a command line.
